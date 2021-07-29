@@ -1,4 +1,5 @@
 import DateContainer from "./DateContainer"
+import Quote from './Quote'
 
 const Header = () => {
     
@@ -6,6 +7,7 @@ const Header = () => {
      return (
         <header  className='header'>
             <DateContainer/>
+            <Quote/>
         </header>
     )
 }

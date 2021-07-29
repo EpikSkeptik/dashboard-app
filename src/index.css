@@ -12,11 +12,21 @@ body{
   background-color: rgba(250, 249, 245, 0.918);
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid rgb(106, 112, 112);
   border-radius: 20px;
   margin: 5px 5px;
-  max-width: fit-content;
+  width: 800px;
 }
 
 
@@ -36,4 +46,22 @@ body{
   font-size: 3.5em;
   padding: 0 40px;
   font-weight: 700;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border:2px solid rgb(106, 112, 112);
+  border-radius: 15px;
+  min-width: 600px;
+  height: 400px;
+}
+
+.quote {
+  padding: 30px;
+  max-width: 400px;
+  font-size: 30px;
+  text-align: center;
 }

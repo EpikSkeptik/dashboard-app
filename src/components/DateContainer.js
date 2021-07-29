@@ -31,7 +31,7 @@ const timeEnd = (today) => {
 // Make the timeStr
 const timeStr = () => {
     let today = new Date();
-    return hoursFormat(today) + ':' + minsFormat(today) + ' ' + timeEnd(today);
+    return hoursFormat(today) + ':' + minsFormat(today) + ' ' + timeEnd(today) + ' ' + today.getSeconds();
 }
 
 // Get Date
