@@ -1,9 +1,13 @@
 import Header from './components/Header'
+import Bottom from './components/Bottom'
 
 function App() {
   return (
     <div className="container">
-      <Header/>
+      <div className="overlay">
+        <Header/>
+        <Bottom/>
+      </div>
     </div>
   );
 }

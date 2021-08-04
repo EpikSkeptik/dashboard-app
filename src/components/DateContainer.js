@@ -19,6 +19,14 @@ const minsFormat = (today) => {
     }
 }
 
+const secsFormat = (today) => {
+    if (today.getSeconds() < 10) {
+        return '0' +  today.getSeconds();
+    } else {
+        return today.getSeconds();
+    }
+}
+
 // Time Am/PM
 const timeEnd = (today) => {
     if (today.getHours() > 12) {
@@ -31,7 +39,7 @@ const timeEnd = (today) => {
 // Make the timeStr
 const timeStr = () => {
     let today = new Date();
-    return hoursFormat(today) + ':' + minsFormat(today) + ' ' + timeEnd(today) + ' ' + today.getSeconds();
+    return hoursFormat(today) + ':' + minsFormat(today) + ':' + secsFormat(today) + ' ' + timeEnd(today) + ' ' ;
 }
 
 // Get Date
