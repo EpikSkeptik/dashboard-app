@@ -130,3 +130,49 @@ header {
   width: 50%;
   justify-self: center;
 }
+
+
+.bottom-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.btn-reminder {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(251, 252, 236, 0.85);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50rem;
+  height: 25rem;
+  border: 2px solid rgba(251, 252, 236, 0.2);
+  border-radius: 20px
+}
+
+.reminders-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 37.5rem;
+  height: 25rem;
+  border: 2px solid rgba(251, 252, 236, 0.2);
+  border-radius: 20px;
+}
+
+.temp {
+  font-size: 100px;
+}
+
+.description {
+  font-size: 30px;
+}
