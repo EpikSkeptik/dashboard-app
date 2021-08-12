@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 
 const Weather = () => {
-    const [lat, setLat] = useState([])
-    const [long, setLong] = useState([])
-    const [data, setData] = useState([])
+    const [lat, setLat] = useState([0])
+    const [long, setLong] = useState([0])
+    const [data, setData] = useState({
+        "main": {'temp': 0},
+        "weather": [{"main":'Weather'}],
+    })
 
     useEffect(() => {
         const fetchData = async () => {
@@ -20,12 +23,12 @@ const Weather = () => {
             });
         }
         fetchData();
-    }, [lat,long]);
+    }, [lat,long, data]);
     return (
         <div className='weather-container'>
             <h1 className='weather-title'>Weather Forecast</h1>
-            <h2 className="temp">{data.main.temp} &deg;C</h2>
-            <h2 className="description">{data.weather[0].main}</h2>
+            <h2 className="temp">{data.main['temp']} &deg;C</h2>
+            <h2 className="description">{data.weather[0]['main']}</h2>
             <h3 className="city">{data.name}</h3>
             
         </div>
