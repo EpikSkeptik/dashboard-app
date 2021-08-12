@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
 const Weather = () => {
-    const [lat, setLat] = useState([0])
-    const [long, setLong] = useState([0])
+    const [lat, setLat] = useState([])
+    const [long, setLong] = useState([])
     const [data, setData] = useState({
         "main": {'temp': 0},
         "weather": [{"main":'Weather'}],
