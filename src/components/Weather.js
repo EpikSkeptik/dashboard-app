@@ -19,13 +19,13 @@ const Weather = () => {
             .then(res => {
                 const d = res.text() 
                 console.log(d)})
-            /*.then(result => {
+            .then(result => {
                 if (result.cod === 200) {
                     setData(result);
                     setLoading(false);
                 }
             })
-            .catch ((err) => console.log(err));*/
+            .catch ((err) => console.log(err));
         }
             fetchData();
 
