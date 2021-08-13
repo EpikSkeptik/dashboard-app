@@ -17,15 +17,15 @@ const Weather = () => {
 
             await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
             .then(res => {
-                const d = res.text().json() 
+                const d = res.text() 
                 console.log(d)})
-            .then(result => {
+            /*.then(result => {
                 if (result.cod === 200) {
                     setData(result);
                     setLoading(false);
                 }
             })
-            .catch ((err) => console.log(err));
+            .catch ((err) => console.log(err));*/
         }
             fetchData();
 
